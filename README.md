@@ -26,7 +26,7 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
     ```bash
    cp .env.example .env
 
-2. **Konfigurasi Database pada File `.env`**
+3. **Konfigurasi Database pada File `.env`**
 
    konfigurasi database file .env yang telah di salin menjadi:
 
@@ -39,14 +39,14 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
    DB_USERNAME=userdocker
    DB_PASSWORD=rootdocker
 
-3. **Build Docker Image**
+4. **Build Docker Image**
    
    Setelah aplikasi Docker Desktop dibuka, jalankan perintah berikut untuk membangun image Docker berdasarkan Dockerfile:
 
     ```bash
    docker-compose build
 
-4. **Jalankan Docker**
+5. **Jalankan Docker**
    
    Setelah image selesai dibangun, jalankan perintah berikut untuk menjalankan container Docker:
    
@@ -54,7 +54,7 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
    
    perintah ini akan menjalankan container secara terpisah untuk aplikasi laravel dan database.
 
-5. **Install Dependensi Composer**
+6. **Install Dependensi Composer**
    
    Setelah itu pergi ke direktori aplikasi laravel dan jalankan perintah berikut untuk menjalankan container Docker:
    
@@ -65,19 +65,19 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
 
          composer install
 
-6. **Generate Key Aplikasi**
+7. **Generate Key Aplikasi**
    
    Masih di dalam container aplikasi, jalankan perintah berikut untuk menghasilkan 'Key' aplikasi:
    
          php artisan key:generate
 
-7. **Migrasi Database**
+8. **Migrasi Database**
    
    Jalankan migrasi untuk membuat tabel-tabel di database:
    
          php artisan migrate
    
-7. **Akses Aplikasi**
+9. **Akses Aplikasi**
    
    Setelah semua langkah di atas selesai, Anda dapat mengakses aplikasi Laravel di browser dengan membuka:
    
@@ -86,3 +86,9 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
    Apabila ingin mengakses phpMyAdmin, Anda dapat membuka:
 
          http://localhost:3001
+   
+## Penghentian Container
+
+Untuk menghentikan semua container Docker yang sedang berjalan, jalankan perintah berikut:
+
+      docker-compose down
