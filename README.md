@@ -96,18 +96,18 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
          php artisan migrate
 
 10. **Akses Aplikasi**
-   
-   Setelah semua langkah di atas selesai, Anda dapat mengakses aplikasi Laravel di browser dengan membuka:
+
+      Setelah semua langkah di atas selesai, Anda dapat mengakses aplikasi Laravel di browser dengan membuka:
    
          http://localhost:8000
 
-   Apabila ingin mengakses phpMyAdmin, Anda dapat membuka:
+      Apabila ingin mengakses phpMyAdmin, Anda dapat membuka:
 
          http://localhost:3001
 
-   berikut username dan password untuk mengakses phpMyadmin:
-      - username : userdocker
-      - password : rootdocker
+      berikut username dan password untuk mengakses phpMyadmin:
+         - username : userdocker
+         - password : rootdocker
    
 ## Penghentian Container
 
