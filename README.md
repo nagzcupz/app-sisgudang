@@ -17,7 +17,7 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
 
     ```bash
    git clone https://github.com/nagzcupz/app-sisgudang.git
-   cd app-sisgudang/app/sis-gudang-backend
+   cd app-sisgudang
 
 2. **Salin FIle `.env`**
 
@@ -41,7 +41,7 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
 
 3. **Build Docker Image**
    
-   Jalankan perintah berikut untuk membangun image Docker berdasarkan Dockerfile:
+   Setelah aplikasi Docker Desktop dibuka, jalankan perintah berikut untuk membangun image Docker berdasarkan Dockerfile:
 
     ```bash
    docker-compose build
@@ -51,6 +51,38 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
    Setelah image selesai dibangun, jalankan perintah berikut untuk menjalankan container Docker:
    
          docker-compose up -d
-         docker-compose exec sis_gudang_app bash
    
    perintah ini akan menjalankan container secara terpisah untuk aplikasi laravel dan database.
+
+5. **Install Dependensi Composer**
+   
+   Setelah itu pergi ke direktori aplikasi laravel dan jalankan perintah berikut untuk menjalankan container Docker:
+   
+         cd app/sis-gudang-backend
+         docker-compose exec sis_gudang_app bash
+   
+   Setelah masuk ke dalam container, jalankan perintah berikut untuk menginstal dependensi:
+
+         composer install
+
+6. **Generate Key Aplikasi**
+   
+   Masih di dalam container aplikasi, jalankan perintah berikut untuk menghasilkan 'Key' aplikasi:
+   
+         php artisan key:generate
+
+7. **Migrasi Database**
+   
+   Jalankan migrasi untuk membuat tabel-tabel di database:
+   
+         php artisan migrate
+   
+7. **Akses Aplikasi**
+   
+   Setelah semua langkah di atas selesai, Anda dapat mengakses aplikasi Laravel di browser dengan membuka:
+   
+         http://localhost:8000
+
+   Apabila ingin mengakses phpMyAdmin, Anda dapat membuka:
+
+         http://localhost:3001
