@@ -2,6 +2,16 @@
 
 Proyek ini adalah aplikasi Laravel 11 yang dikonfigurasi untuk berjalan menggunakan Docker dan Laravel Sanctum. Panduan ini akan membantu Anda menjalankan aplikasi ini di lingkungan lokal setelah melakukan clone dari repository GitHub.
 
+## Dokumen Postman
+
+Untuk pengujian API, Anda dapat melihat dokumen Postman yang telah disediakan. Klik link di bawah untuk melihat dokumen Postman:
+
+[**Dokumen Postman**](https://documenter.getpostman.com/view/17405806/2sA3sAioRL)
+
+apabila ingin menggunakan koleksi postman. klik link dibawah ini:
+
+[**link collection Postman**](https://api.postman.com/collections/17405806-100f097b-b36d-424a-91c1-65633ad716f4?access_key=PMAT-01J5TB8MC4MEZZ6T6R5YBCQKXS)
+
 ## Persyaratan
 
 Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
@@ -92,9 +102,3 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
 Untuk menghentikan semua container Docker yang sedang berjalan, jalankan perintah berikut:
 
       docker-compose down
-
-## Dokumen Postman
-
-Untuk pengujian API, Anda dapat melihat dokumen Postman yang telah disediakan. Klik link di bawah untuk melihat dokumen Postman:
-
-[**Dokumen Postman**](https://documenter.getpostman.com/view/17405806/2sA3sAioRL)
