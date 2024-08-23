@@ -50,7 +50,6 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
    
    Setelah image selesai dibangun, jalankan perintah berikut untuk menjalankan container Docker:
    
-       ```bash
          docker-compose up -d
          docker-compose exec sis_gudang_app bash
    
