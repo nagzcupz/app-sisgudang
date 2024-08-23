@@ -1,22 +1,19 @@
-# My Laravel Project with Docker and Sanctum
+# Sistem Gudang API
 
-This project is a Laravel application that uses Docker for environment management and Sanctum for API authentication.
+Proyek ini adalah aplikasi Laravel 11 yang dikonfigurasi untuk berjalan menggunakan Docker dan Laravel Sanctum. Panduan ini akan membantu Anda menjalankan aplikasi ini di lingkungan lokal setelah melakukan clone dari repository GitHub.
 
-## Prerequisites
+## Persyaratan
 
-Before you begin, make sure you have the following installed:
+Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
 
-- [Docker](https://docs.docker.com/get-docker/)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+- **Git**: Untuk meng-clone repository.
+- **Docker**: Untuk menjalankan container aplikasi.
 
-## Getting Started
+## Langkah-langkah Menjalankan Aplikasi
 
-Follow these steps to get the project up and running on your local machine.
+1. **Clone Repository**
 
-### 1. Clone the Repository
+   Pertama, clone repository dari GitHub ke komputer Anda:
 
-Clone this repository to your local machine:
-
-```bash
-git clone https://github.com/username/nama-repository.git
-cd nama-repository
+   ```bash
+   git clone https://github.com/username/nama-repository.git
