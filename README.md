@@ -12,6 +12,8 @@ apabila ingin menggunakan koleksi postman. klik link dibawah ini:
 
 [**link collection Postman**](https://api.postman.com/collections/17405806-100f097b-b36d-424a-91c1-65633ad716f4?access_key=PMAT-01J5TB8MC4MEZZ6T6R5YBCQKXS)
 
+setelah itu pilih `import` yang ada di pojok kanan atas pada menu `collections` dan copy json yang ada dalam link tersebut. 
+
 ## Persyaratan
 
 Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
