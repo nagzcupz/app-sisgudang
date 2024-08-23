@@ -17,9 +17,8 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
 
    ```bash
    git clone https://github.com/username/nama-repository.git
-`
 
-   Pertama, clone repository dari GitHub ke komputer Anda:
+   Masuk ke direktori proyek:
 
    ```bash
-   git clone https://github.com/username/nama-repository.git
+   cd nama-repository
