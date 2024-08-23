@@ -1,4 +1,4 @@
-w# Sistem Gudang API
+## Sistem Gudang API
 
 Proyek ini adalah aplikasi Laravel 11 yang dikonfigurasi untuk berjalan menggunakan Docker dan Laravel Sanctum. Panduan ini akan membantu Anda menjalankan aplikasi ini di lingkungan lokal setelah melakukan clone dari repository GitHub.
 
@@ -38,7 +38,20 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
    DB_DATABASE=db_sisGudang
    DB_USERNAME=userdocker
    DB_PASSWORD=rootdocker
-    
 
+3. **Build Docker Image**
+   
+   Jalankan perintah berikut untuk membangun image Docker berdasarkan Dockerfile:
 
+    ```bash
+   docker-compose build
 
+4. **Jalankan Docker**
+   
+   Setelah image selesai dibangun, jalankan perintah berikut untuk menjalankan container Docker:
+   
+       ```bash
+         docker-compose up -d
+         docker-compose exec sis_gudang_app bash
+   
+   perintah ini akan menjalankan container secara terpisah untuk aplikasi laravel dan database.
