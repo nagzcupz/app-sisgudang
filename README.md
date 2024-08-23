@@ -92,3 +92,9 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
 Untuk menghentikan semua container Docker yang sedang berjalan, jalankan perintah berikut:
 
       docker-compose down
+
+## Dokumen Postman
+
+Untuk pengujian API, Anda dapat melihat dokumen Postman yang telah disediakan. Klik link di bawah untuk melihat dokumen Postman:
+
+[**Dokumen Postman**](https://documenter.getpostman.com/view/17405806/2sA3sAioRL)
