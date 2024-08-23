@@ -106,8 +106,8 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
          http://localhost:3001
 
       berikut username dan password untuk mengakses phpMyadmin:
-         - username : userdocker
-         - password : rootdocker
+         - **Git**: Untuk meng-clone repository.
+         - **Docker**: Untuk menjalankan container aplikasi.
    
 ## Penghentian Container
 
