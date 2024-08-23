@@ -82,14 +82,20 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
    Masih di dalam container aplikasi, jalankan perintah berikut untuk menghasilkan 'Key' aplikasi:
    
          php artisan key:generate
+   
+8. **Membuat Symbolic Link untuk Storage**
 
-8. **Migrasi Database**
+   Jalankan perintah berikut untuk membuat symbolic link dari `storage` ke `public`:
+
+         php artisan storage:link
+
+9. **Migrasi Database**
    
    Jalankan migrasi untuk membuat tabel-tabel di database:
    
          php artisan migrate
-   
-9. **Akses Aplikasi**
+
+10. **Akses Aplikasi**
    
    Setelah semua langkah di atas selesai, Anda dapat mengakses aplikasi Laravel di browser dengan membuka:
    
@@ -98,6 +104,10 @@ Pastikan Anda telah menginstal perangkat lunak berikut di komputer Anda:
    Apabila ingin mengakses phpMyAdmin, Anda dapat membuka:
 
          http://localhost:3001
+
+   berikut username dan password untuk mengakses phpMyadmin:
+      - username : userdocker
+      - password : rootdocker
    
 ## Penghentian Container
 
